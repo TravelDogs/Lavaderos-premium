@@ -1,0 +1,428 @@
+/* LAVADOS PREMIUM - ESTILOS */
+
+:root {
+  --bg: #101114;
+  --surface: #1b1c20;
+  --surface-light: #25262b;
+  --gold: #d4af37;
+  --gold-light: #f0d77b;
+  --text: #f5f5f5;
+  --muted: #a5a5a5;
+  --border: #393939;
+  --success: #43a76b;
+  --danger: #e36a6a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* ENCABEZADO */
+
+.header {
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    #101114,
+    #29251b
+  );
+  border-bottom: 2px solid var(--gold);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.brandmark {
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 28px;
+}
+
+.brand strong {
+  display: block;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.brand em {
+  color: var(--gold);
+  font-style: normal;
+}
+
+.brand small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* NAVEGACIÓN */
+
+.navigation {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  overflow-x: auto;
+  background: #17181b;
+  border-bottom: 1px solid var(--border);
+}
+
+.navigation button {
+  background: var(--surface-light);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 12px 16px;
+  border-radius: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.navigation button:hover,
+.navigation button.active {
+  background: var(--gold);
+  color: #111;
+  border-color: var(--gold);
+}
+
+/* CONTENIDO */
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  min-height: 70vh;
+}
+
+.section {
+  animation: fadeIn 0.2s ease;
+}
+
+.hidden {
+  display: none !important;
+}
+
+h1 {
+  color: var(--gold);
+  font-size: 28px;
+  margin: 10px 0 24px;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 28px 0 16px;
+  color: var(--gold-light);
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+/* TARJETAS */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 14px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.stats .card {
+  text-align: center;
+}
+
+.stats .card h3 {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.stats .card p {
+  color: var(--gold);
+  font-size: 26px;
+  font-weight: 700;
+  margin: 8px 0 0;
+}
+
+/* FORMULARIOS */
+
+form {
+  max-width: 650px;
+}
+
+label {
+  display: block;
+  margin: 16px 0 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  background: var(--surface-light);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--gold);
+}
+
+input::placeholder {
+  color: #888;
+}
+
+/* BOTONES */
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.primary {
+  display: inline-block;
+  background: var(--gold);
+  color: #111;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.primary:hover {
+  background: var(--gold-light);
+}
+
+.secondary {
+  background: var(--surface-light);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.whatsapp {
+  background: #25d366;
+  color: #111;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 15px;
+  font-weight: 700;
+}
+
+.danger {
+  background: #542626;
+  color: #fff;
+  border: 1px solid var(--danger);
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+/* VEHÍCULOS */
+
+.wash-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 14px;
+}
+
+.wash-card h3 {
+  color: var(--gold-light);
+  margin-bottom: 8px;
+}
+
+.wash-card p {
+  margin: 6px 0;
+  color: var(--muted);
+}
+
+.wash-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  background: #333;
+  color: #fff;
+}
+
+.status.ready {
+  background: #174f32;
+  color: #91e7ad;
+}
+
+.status.progress {
+  background: #50401b;
+  color: #f0d77b;
+}
+
+/* PRECIOS */
+
+.price-row {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.price-row label {
+  margin: 0;
+}
+
+/* CLIENTES */
+
+.client-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.client-card h3 {
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+
+.client-card p {
+  color: var(--muted);
+  margin: 4px 0;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+  text-align: center;
+  padding: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer small {
+  font-size: 11px;
+}
+
+/* ANIMACIONES */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TABLETS */
+
+@media (max-width: 850px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* CELULARES */
+
+@media (max-width: 500px) {
+  .header {
+    padding: 15px;
+  }
+
+  .brand strong {
+    font-size: 18px;
+  }
+
+  .brandmark {
+    width: 44px;
+    height: 44px;
+    font-size: 23px;
+  }
+
+  main {
+    padding: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .stats {
+    gap: 8px;
+  }
+
+  .stats .card {
+    padding: 12px;
+  }
+
+  .stats .card p {
+    font-size: 22px;
+  }
+
+  .navigation button {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .price-row {
+    grid-template-columns: 1fr 110px;
+  }
+
+  .wash-actions button {
+    flex: 1;
+  }
+}
