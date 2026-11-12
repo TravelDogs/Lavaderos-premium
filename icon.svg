@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 512 512">
+
+  <rect width="512"
+        height="512"
+        rx="100"
+        fill="#101114"/>
+
+  <circle cx="256"
+          cy="256"
+          r="205"
+          fill="none"
+          stroke="#d4af37"
+          stroke-width="12"/>
+
+  <path d="M130 300
+           L170 220
+           L342 220
+           L382 300
+           Z"
+        fill="none"
+        stroke="#d4af37"
+        stroke-width="14"
+        stroke-linejoin="round"/>
+
+  <circle cx="185"
+          cy="310"
+          r="25"
+          fill="#d4af37"/>
+
+  <circle cx="327"
+          cy="310"
+          r="25"
+          fill="#d4af37"/>
+
+  <text x="256"
+        y="145"
+        text-anchor="middle"
+        fill="#d4af37"
+        font-family="Arial"
+        font-size="45"
+        font-weight="bold">
+    LP
+  </text>
+
+  <text x="256"
+        y="405"
+        text-anchor="middle"
+        fill="#d4af37"
+        font-family="Arial"
+        font-size="31">
+    PREMIUM
+  </text>
+
+</svg>
